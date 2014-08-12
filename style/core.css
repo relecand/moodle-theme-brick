@@ -1,0 +1,794 @@
+
+
+/* Global
+---------------------------*/
+
+
+html, body {
+    background: #eee;
+    font-family: 'Signika', sans-serif, Verdana !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.category_link
+{
+    font-weight:bold;
+    font-size:1.2em;
+    margin-bottom:20px; 
+}
+
+
+#mypagewrapper {
+    width: 100%;
+    border-top: 0px solid #fff;
+}
+
+#page {
+    margin-top: 15px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    border: 1px solid #dadada;
+    background: #fff;
+}
+
+#wrapper {
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 17px;
+}
+
+#wrapper.notathome {
+    padding-top: 15px;
+}
+.content-only #wrapper {
+    padding-right: 0px;
+}
+
+/* Header
+----------------------------*/
+
+#page-header {
+    width: 100%; /*100%*/
+    top: 0px;
+    height: 94px;
+    float: none;
+    border-bottom: 0px solid white;
+}
+
+#header {
+    width: 85%;
+    height: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background: #ddd6cc url([[pix:theme|header_bg]]) 0 100%;*/
+    background-color: #FFFFFF;
+}
+
+#logo {
+    background-position: 0% 10%;
+    width: 300px;
+    height: 70px;
+    float: left;
+}
+#nologo {
+    width: 590px;
+    height: 70px;
+    float: left;
+    margin-left: 6px;
+    overflow: hidden;
+    display: none;
+}
+#nologo a, #nologo {
+    font-family: 'Signika', sans-serif, Verdana !important; /*;Arial; Georgia, Palatino, serif;*/
+    line-height: 70px;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+#loggedinas {
+    min-width: 240px;
+    /*height: 65px;*/
+    float: right;
+    text-align: right;
+    /*line-height: 65px;*/
+    font-size: 10px;
+}
+
+#loggedinas a {
+    color: #000;
+}
+
+#headerbottom {
+    clear: both;
+}
+
+#headingtitle {
+    float: right;
+    width: 280px;
+    padding-right: 5px;
+    text-align: right;
+    height: 70px;
+    overflow: hidden;
+    background: url([[pix:theme|youare]]) no-repeat;
+    background-position: 95% 110%;
+    position: relative;
+    bottom: -2px;
+}
+
+#headingtitle h1 {
+    line-height: 67px;
+    font-weight: 200;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+}
+/* end Header
+----------------------------*/
+
+#region-post2 .region-content div.navbutton {
+    display: inline-block !important;
+    width: 100%;
+    float: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    clear: both;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea {
+    font-family: 'Signika', sans-serif, Verdana !important; /*ArialGeorgia, Palatino, serif;*/
+    line-height: 1.5;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Signika', sans-serif, Verdana !important; /*Arial; Georgia, Times, "Times New Roman", serif !important;*/
+}
+
+h2,h3,h4,h5,h6 {
+    color: #999;
+    font-weight: normal;
+}
+
+blockquote {
+    border-left: 1px solid #eee;
+    padding-left: 15px;
+    color: #666;
+}
+
+.mform fieldset {
+    border-color: #eee;
+}
+
+.mform fieldset legend {
+    color: #555;
+    font-weight: normal;
+    font-size: 1.2em;
+    border: 1px solid #eee;
+    padding: 2px 5px;
+    background: #fff;
+}
+
+
+div.navbar {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    background: #fafafa url([[pix:theme|block]]) no-repeat;
+    background-position: 100% 0%;
+    font-size: 0.85em;
+    font-style: italic;
+    font-weight: 200;
+    padding:0 10px;
+    margin-bottom: 7px;
+}
+
+div.breadcrumb li {
+    line-height: 30px;
+    font-family: 'Signika', sans-serif, Verdana !important; /*Arial; Georgia, serif;*/
+}
+
+.breadcrumb li img {
+    vertical-align: middle;
+}
+
+/** breadcrumb image replacement **/
+
+div.navbar span.arrow.sep {
+    font-size: 1px;
+    color: #fafafa;
+    background: url([[pix:theme|crumber]]) no-repeat;
+    background-position: 50% 25%;
+    display: inline-block;
+    width: 16px;
+    height: 30px;
+}
+
+.navbutton {
+    float: none;
+    width: 100%;
+    padding: 5px 0 15px;
+    text-align: center;
+}
+
+/* Blocks
+----------------------------*/
+
+.block {
+    border: none;
+}
+
+div.block {
+    padding: 2px;
+    border: 1px solid #dadada;
+    margin-left: -10px;
+}
+
+#region-main div.block {
+    margin-left: 0px;
+    background-image: none;
+}
+
+.block div.header {
+    min-height: 33px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+
+div.block.hidden div.header {
+    border-bottom: none;
+}
+
+.block .header h2 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+}
+
+.block div.content {
+    background: #fff;
+    border: 1px solid #dadada;
+    border-top: none;
+    padding: 4px;
+}
+
+.block div.content h1, .block div.content h2.main, .block div.content h3.main {
+    font-size: 13px;
+    background-image: none;
+}
+
+.block_calendar_month table.minicalendar.calendartable td,.block_calendar_month table.minicalendar.calendartable th {
+    border: none !important;
+}
+
+.block_calendar_month table.minicalendar {
+    margin-bottom: 0px !important;
+}
+
+.block_calendar_month table.minicalendar.calendartable th abbr {
+    border: none !important;
+    text-decoration: none;
+}
+
+
+/** main headings **/
+
+.generalbox h2,h3.sectionname, h2.headingblock,h2.main,h3.main, h2.main a, h3.main a, div.loginpanel h2, div.signuppanel h2 {
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1.3em;
+    font-size: 20px;
+    border-bottom: 0px solid #eee;
+    padding-bottom: 4px;
+    /**background: url([[pix:theme|mainbar]]) repeat-x;**/
+    background-position: 0% 100%;
+	text-align:left;
+    font-family: 'Signika', sans-serif, Verdana !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.generalbox h2, #page-course-info h2.main, h3.sectionname, h2.main a, h3.main a, div.loginpanel h2, div.signuppanel h2, div.hd h3.main {
+    font-size: 17px;
+    background: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* Courses 
+----------------------------*/
+
+.coursebox {
+    border-color: #eee;
+}
+
+.coursebox .info {
+    width: 35%;
+}
+
+.coursebox .info .name {
+    margin-bottom: 0;
+}
+
+.coursebox .info .teachers {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.coursebox .summary {
+    width: 63%;
+}
+
+.course-content .section.main {
+    border-bottom: 1px solid #eee;
+}
+
+.course-content .section.main .content {
+    padding: 5px 5px 10px;
+}
+
+.course-content .weeks .section.main .content {
+    margin-left: 0;
+}
+
+.course-content .weeks .section.main .left {
+    display: none;
+}
+
+.course-content .section.main.current {
+    background: #fffcdc;
+}
+
+.course-content .weeks .section.main h3.weekdates {
+    color: #999;
+}
+
+.course-content .current .left,
+.course-content .current h3.weekdates {
+    color: #92310c !important;
+}
+
+span.completionprogress {
+    font-size: 11px;
+    color: #666666;
+}
+
+/* Forum 
+--------------------------*/
+
+.forumpost .topic {
+    background: #eee url([[pix:theme|block]]) no-repeat;
+    background-position: 100% 0%;
+    border-width: 0;
+    border: 1px solid #dadada;
+    padding: 0 10px 0;
+}
+
+.forumpost .subject {
+    font-size: 1.45em;
+    font-family: 'Signika', sans-serif, Verdana !important; /*Arial; Georgia, serif;*/
+}
+
+.forumpost .author {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+td.picture.left img {
+    background: #fafafa;
+    padding: 4px;
+    padding-bottom: 9px;
+    border: 1px solid #dadada;
+}
+
+.forumpost .content {
+    border-width: 0 1px 1px;
+    border-style: solid;
+    border-color: #aaa #dadada #dadada;
+    padding: 5px 10px 10px;
+}
+
+/* Footer 
+----------------------------*/
+
+#page-footer .helplink {
+    margin: 1em 0;
+}
+
+/* Dock */
+
+body.has_dock {
+   /*margin-left: auto;*/
+}
+
+.has_dock #page, .has_dock #header {
+    margin-left: auto;
+}
+
+#dock {
+    left: 50%;
+    top: 59px;
+    margin-left: -566px;
+    border-width: 0;
+    background-color: transparent;
+    position: absolute;
+}
+
+#dock .controls {
+    bottom: auto;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#dock .dockeditem_container {
+    position: relative;
+}
+
+#dock .dockeditem.firstdockitem {
+    margin-top: 50px;
+    border-top: 1px solid #dadada;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    border-top-left-radius: 3px;
+}
+
+#dock .dockeditem {
+    background-color: #fff;
+    padding: 2px;
+    padding-right: 0px;
+    border-left: 1px solid #dadada;
+    border-right: 0px solid #fafafa;
+    border-top: 1px solid #fafafa;
+}
+
+#dock .dockedtitle {
+    border-width: 0;
+}
+
+#dock .dockedtitle h2 {
+    margin: 0;
+    padding: 10px 3px;
+}
+
+#dock .dockedtitle.activeitem {
+    /*color: #fff !important;*/
+    width: 35px;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#dock .dockedtitle.activeitem h2 {
+    /*color: #fff !important;*/
+}
+
+#dockeditempanel {
+    margin-left: 0px;
+}
+
+#dockeditempanel .dockeditempanel_content {
+    background-color: #fff;
+    margin: 0 3px;
+    position: relative;
+    min-height: 100px;
+    -webkit-border-radius: 3px;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius: 3px;
+    -moz-border-radius-topleft: 0;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+}
+
+#dockeditempanel .dockeditempanel_hd {
+    border-width: 0;
+    padding: 2px;
+}
+
+#dockeditempanel .dockeditempanel_hd h2 {
+    font-size: 0.9em;
+    /*color: #fff;*/
+}
+
+/** yui menu styles **/
+
+#menustuff {
+    width: 600px;
+    float: left;
+    clear: left;
+    height: 65px;
+}
+
+#custommenu,
+#custommenu .yui3-menu-content {
+    border-width:0;
+}
+
+#custommenu .yui3-menu-content li a {
+    font-size: 14px;
+    font-family: 'Signika', sans-serif, Verdana !important; /*Arial; Georgia, serif;*/
+    font-weight: 200;
+    text-transform: lowercase;
+    line-height: 70px;
+    cursor: pointer;
+    border-width:0;
+}
+
+#custommenu .yui3-menu-content li li a {
+    line-height: 30px;
+    text-shadow:none;
+}
+
+#custommenu .yui3-menu-content li a:hover {
+    text-decoration: underline;
+}
+
+#custommenu .yui3-menu-content .yui3-menu-content {
+    background-image: url([[pix:theme|youare]]);
+    background-position: 30px 0;
+    background-repeat: no-repeat;
+    background-color:transparent;
+    margin-top:-10px;
+    min-width: 200px;
+}
+
+#custommenu .yui3-menu-content .yui3-menu-content ul {
+    margin-top:10px;
+    background-color:#FFF;
+    border: 1px solid #dadada
+}
+
+#custommenu .yui3-menu-content .yui3-menu-content .yui3-menu-content,
+#custommenu .yui3-menu-content .yui3-menu-content .yui3-menu-content ul {
+    margin-top:0;
+    background-image:none;
+}
+
+#custommenu .yui3-menuitem-active,
+#custommenu .yui3-menuitem-active .yui3-menuitem-content {
+    background-color:transparent;
+}
+
+#custommenu .yui3-menu .yui3-menu .yui3-menu-label-active,
+#custommenu .yui3-menu .yui3-menu .yui3-menu-label-menuvisible,
+#custommenu .yui3-menu .yui3-menu .yui3-menuitem-active,
+#custommenu .yui3-menu .yui3-menu .yui3-menuitem-active .yui3-menuitem-content {
+    background-color: #FFF0A5;
+}
+
+.logininfo a {
+    color: #000000;
+}
+
+
+#login_blog {
+	float:right; 
+	position:relative; 
+	margin-top:-290px; 
+	margin-right:20px; 
+	width:200px; 
+	font-size:11px;
+	}
+	
+#login_blog_title{
+	font-size:14px;
+	color:#000;
+	font-weight: bold;
+	margin-bottom: 10px;
+
+	}
+.langmenu {
+	margin-right:14px;
+	margin-top:2px;
+	}
+
+.logininfo {
+    margin-right:29px;
+    margin-top:-1px;
+}
+
+.loginfailures {
+    margin-right:29px;
+    margin-top:-1px;
+    color: red;
+}
+
+#coursesearch {
+	text-align:left;
+	margin-bottom:25px;
+	margin-top: 25px;
+	}
+
+.category_label{
+	border-bottom: 1px solid #CCC;
+	
+	}
+
+
+
+.categorylist {
+        border-bottom: 1px solid #CCC;
+        padding-left: 20px;
+        }
+
+.numberofcourse {
+        float: right;
+
+        }
+.indentation {
+    padding-left: 20px;
+    width: 98%;
+    font-size: 0.9em;
+}
+
+fieldset#header {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+}
+
+input[type="submit"],input[type="button"] {
+    padding: 4px 6px;
+    border: solid 1px #DADADA;
+    background: [[setting:maincolor]];
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    margin-left:2px;
+}
+
+.btn-cancel  {
+    padding: 4px 6px !important;
+    border: solid 1px #DADADA !important;
+    background: [[setting:maincolor]] !important;
+    color: #000000 !important;
+    text-decoration: none;
+    cursor: pointer !important;
+    display: inline-block !important;
+    text-align: center !important;
+    line-height: 1 !important;
+}
+
+/* QUIZ */
+
+#page-mod-quiz-edit .questionbankwindow.block div.header {
+    background-color: [[setting:maincolor]];
+    padding-top: 0.2em;
+    border-bottom-color: #ECEBED;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 0.8em;
+}
+
+#page-mod-quiz-edit .questionbankwindow a#showbankcmd, #page-mod-quiz-edit .questionbankwindow a#hidebankcmd {
+    color: #000000;
+}
+
+#page-mod-quiz-edit div.quizcontents {
+    clear: left;
+    display: block;
+    float: left;
+    width: 60%;
+}
+
+.questionbankwindow.block {
+    border-bottom-width: 0;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 0;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 0;
+    border-top-width: 0;
+    display: block;
+    float: left;
+    padding-bottom: 0.5em;
+    right: 0.3em;
+    width: 35%;
+}
+
+#page-mod-quiz-edit .categoryinfo {
+    background-color: #FFFFFF;
+    border-bottom-color: #BBBBBB;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#page-mod-quiz-edit div.quizpage .pagecontent {
+    background-color: #D6D6D6;
+    border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: #777777;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: solid;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: thin;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    display: block;
+    float: left;
+    line-height: 1.3em;
+    margin-bottom: 0.2em;
+    margin-left: 0.3em;
+    margin-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.15em;
+    position: relative;
+    width: 120%;
+}
+
+#graded_users_selector {
+    float: none !important;
+    text-align: right !important;
+}
+
+/* Course overview on Campus */
+/* keine Aktivitaeten unter den Kursen anzeigen */
+
+.hidenewsicon {
+ display: none !important;
+}
+
+.coc-coursenews {
+ display: none !important;
+}
+
+/* Chrom Bug: Fett wird nicht richtig angezeigt 
+h1, h2, h3, h4, h5, h6, strong {
+-webkit-font-smoothing: antialiased;
+}*/
+
+
+/*TabTopic Course Format*/
+/* The border under tabs */
+.yui3-skin-sam .yui3-tabview-list
+{
+border-bottom-color: #89BC3F !important;
+}
+/*The regular tab style*/
+.yui3-skin-sam .yui3-tab-label
+{
+background-color: #EFEFEF !important;
+}
+/*The regular tab style hover*/
+.yui3-skin-sam .yui3-tab-label:focus,
+.yui3-skin-sam .yui3-tab-label:hover
+{
+background-color: #EDF5FF !important;
+}
+/*The selected tab border color*/
+.yui3-skin-sam .yui3-tab-selected .yui3-tab-label,
+.yui3-skin-sam .yui3-tab-selected .yui3-tab-label:focus,
+.yui3-skin-sam .yui3-tab-selected .yui3-tab-label:hover
+{
+border-color: #89BC3F !important;
+background-color: #89BC3F !important;
+/* Note: On IE9 you will probably have to put "background: #2647A0 !important;" in order to force the color changes */
+}
+/*The tab content background color*/
+.yui3-skin-sam .yui3-tabview-panel
+{
+background-color: #EDF5FF !important;
+}
+
+/*Feedback Print links ausrichten*/
+.pagelayout-embedded {
+    background-color: #FFFFFF;
+    background-image: none;
+    text-align: left !important;
+}
